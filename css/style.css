@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.imagen {
+  max-width: 80vw;
+  height: auto;
+  margin: 10px 0;
+  object-fit: contain;
+}
+
+/* Contenedor especial para la cuarta imagen y la decorativa */
+.contenedor-imagen4 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.decoracion {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
