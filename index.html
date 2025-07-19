@@ -1,20 +1,48 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Imágenes Apiladas</title>
-  <link rel="stylesheet" href="estilos.css" />
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+        .image-conteines {
+            margin: 0 auto;
+            width: 80%;
+        }
+        .image-conteiner {
+            margin:0 auto;
+            width: 60%;
+        }
+        img{
+            image-rendering: auto; 
+            width: 100%;
+            height: auto;
+
+        }
+    </style>   
 </head>
 <body>
-  <div class="contenedor">
-    <img src="img/decoracionSuperior.png" alt="Imagen 1" class="imagen" />
-    <img src="img/tituloSeccion1.png" alt="Imagen 2" class="imagen" />
-    <img src="img/trioFotos.png" alt="Imagen 3" class="imagen" />
-    <div class="contenedor-imagen4">
-      <img src="img/texto1.png" alt="Imagen 4" class="imagen" />
-      <img src="img/floresAzules1.png" alt="Decoración" class="decoracion" />
+    <div class="gallery">
+
+        <div class="image-conteines">
+            <img src="img/img1.png" alt="img1">
+        </div>
+
+        <div class="image-conteines">
+            <img src="img/img2.png" alt="img2">
+        </div>
+
+        <div class="image-conteines">
+            <img src="img/img3.png" alt="img3">
+        </div>
+
+        <div class="image-conteiner">
+            <img src="img/img4.png" alt="img4">
+        </div>
     </div>
-  </div>
 </body>
 </html>

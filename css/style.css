@@ -4,42 +4,53 @@
   box-sizing: border-box;
 }
 
-body, html {
+html, body {
   height: 100%;
+  width: 100%;
+}
+
+body {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
+  font-family: sans-serif;
 }
 
+/* Contenedor principal centrado */
 .contenedor {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-}
-
-.imagen {
-  max-width: 80vw;
-  height: auto;
-  margin: 10px 0;
-  object-fit: contain;
-}
-
-/* Contenedor especial para la cuarta imagen y la decorativa */
-.contenedor-imagen4 {
-  position: relative;
-  width: 100%;
-  display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
+/* Imágenes principales */
+.imagen {
+  width: 300px;           /* tamaño visible aunque sean pequeñas */
+  min-height: 150px;
+  object-fit: contain;
+  background-color: #ddd; /* ayuda a ver imágenes pequeñas o con fondo transparente */
+  border: 1px solid #aaa; /* para que se noten visualmente durante pruebas */
+}
+
+/* Contenedor de la imagen 4 y la decorativa */
+.fila {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Imagen decorativa a la derecha de la 4 */
 .decoracion {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  opacity: 1;
+  width: 100px;
+  height: 150px;
+  opacity: 0.3;
+  object-fit: contain;
   pointer-events: none;
-  z-index: 0;
+  background-color: #ccc;
+  border: 1px dashed #666;
 }
