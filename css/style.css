@@ -1,56 +1,72 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 html, body {
-  height: 100%;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: #F2FBFF;
+}
+
+.image-conteines-little {
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 0px;
+}
+
+.image-conteines-none {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 0px;
+}
+
+.image-conteines-small {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.image-conteines-mid {
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 60px;
+}
+
+.image-conteines-big {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 250px;
+}
+.image-conteines-medium {
+  margin: 0 auto;
+  width: 80%;
+  margin-bottom: 100px;
+}
+.image-superior {
+  margin: 0 auto;
   width: 100%;
+  margin-bottom: 20px;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f0f0f0;
-  font-family: sans-serif;
+.image-superior-none {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 0px;
 }
 
-/* Contenedor principal centrado */
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+.seccion2 {
+  position: relative;
+  background-image: url("../img/fondoMarmol.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: auto; /* tamaño natural */
+  width: fit-content;
+  height: fit-content;
 }
 
-/* Imágenes principales */
-.imagen {
-  width: 300px;           /* tamaño visible aunque sean pequeñas */
-  min-height: 150px;
-  object-fit: contain;
-  background-color: #ddd; /* ayuda a ver imágenes pequeñas o con fondo transparente */
-  border: 1px solid #aaa; /* para que se noten visualmente durante pruebas */
-}
-
-/* Contenedor de la imagen 4 y la decorativa */
-.fila {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* Imagen decorativa a la derecha de la 4 */
-.decoracion {
-  width: 100px;
-  height: 150px;
-  opacity: 0.3;
-  object-fit: contain;
-  pointer-events: none;
-  background-color: #ccc;
-  border: 1px dashed #666;
+img {
+  image-rendering: auto;
+  width: 100%;
+  height: auto;
 }

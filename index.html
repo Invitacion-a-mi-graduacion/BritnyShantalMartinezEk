@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style type="text/css">
-        *{
-            box-sizing: border-box;
-        }
-        html, body{
-            margin: 0;
-            padding: 0;
-        }
-        .image-conteines {
-            margin: 0 auto;
-            width: 80%;
-        }
-        .image-conteiner {
-            margin:0 auto;
-            width: 60%;
-        }
-        img{
-            image-rendering: auto; 
-            width: 100%;
-            height: auto;
-
-        }
-    </style>   
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
-    <div class="gallery">
+    <div class="seccion1">
 
-        <div class="image-conteines">
+        <div class="image-superior">
             <img src="img/img1.png" alt="img1">
         </div>
 
-        <div class="image-conteines">
+        <div class="image-conteines-mid">
             <img src="img/img2.png" alt="img2">
         </div>
 
-        <div class="image-conteines">
+        <div class="image-conteines-none">
             <img src="img/img3.png" alt="img3">
         </div>
 
-        <div class="image-conteiner">
+        <div class="image-container-big">
             <img src="img/img4.png" alt="img4">
         </div>
+
+        <div class="image-conteines-little">
+            <img src="img/img5.png" alt="img6" onclick="reproducirAudio()">
+            <audio id="cancion" src="song/cancion.mp3"></audio>
+        </div>
+
+        <div class="image-superior-none">
+            <img src="img/img6.png" alt="img6">
+        </div>
+
+        <div class="image-conteines-medium">
+            <img src="img/img7.png" alt="img7">
+        </div>
+
     </div>
+
+    <script src="js/main.js"></script>
+
 </body>
 </html>
