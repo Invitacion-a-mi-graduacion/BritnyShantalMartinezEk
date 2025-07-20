@@ -55,6 +55,12 @@ html, body {
   margin-bottom: 0px;
 }
 
+.image-superior-big {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 250px;
+}
+
 .seccion2 {
   position: relative;
   background-image: url("../img/fondoMarmol.png");
