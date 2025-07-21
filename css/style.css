@@ -61,40 +61,8 @@ html, body {
   margin-bottom: 250px;
 }
 
-.seccion2 {
-  position: relative;
-  background-image: url("../img/fondoMarmol.png");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: auto; /* tamaño natural */
-  width: fit-content;
-  height: fit-content;
-}
-
 img {
   image-rendering: auto;
   width: 100%;
   height: auto;
-}
-
-@keyframes show {
-  from {
-    opacity: 0%;
-    scale: 25%;
-  }
-
-  to {
-    opacity:1%;
-    scale:100%;
-  }
-}
-
-img {
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  
-  animation-timeline: --image;
-  animation-name: show;
-
-  animation-range: entry 25% cover 50%;
 }
